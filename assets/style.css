@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.sequencer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.pads{
+    display: flex;
+    width: 70%;
+}
+.pads >.pad{
+    height: 100px;
+    width: 100px;
+    margin: 0 0.5rem;
+}
+.snare-music,.hihat-music,.kick-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.snare-music h1,.hihat-music h1,.kick-music h1{
+    flex-basis: 10%;
+    text-align: center;
+}
+.access-opt{
+    flex-basis: 20%;
+}
+.pads .snare-pad{
+    background-color: palegoldenrod;
+}
+.pads .snare-pad.active{
+    background-color: rgb(241, 230, 104);
+}
+.pads .hihat-pad{
+    background-color: palegreen;
+}
+.pads .hihat-pad.active{
+    background-color: rgb(87, 204, 87);
+}
+.pads .kick-pad{
+    background-color: palevioletred;
+}
+.pads .kick-pad.active{
+    background-color: rgb(151, 45, 80);
+}
+i{
+    pointer-events: none;
+}
+button{
+    border: 0;
+    padding: 1rem;
+    background-color: #7c7a7a;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+select{
+    padding: 1rem;
+    margin: 0 0.7rem;
+}
+.play{
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    align-self: center;
+}
+.mute-btn.active{
+    opacity: 0.6;
+}
+
+@keyframes Playtime{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.tempo{
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+.tempo .tempo-slider{
+    -webkit-appearance: none;
+   background-color: #7c7c7c;
+   width: 50%;
+   padding: 0.5rem;
+   border-radius: 1rem;
+}
+.tempo .tempo-slider:focus{
+    outline: none;
+}
+.tempo .tempo-text{
+    text-align: center;
+    margin-top: 0.5rem;
+
+}
+.tempo p{
+    font-size: 1.2rem;
+}
