@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css"
+      integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>BeatMaker</title>
+  </head>
+  <body>
+    <div class="sequencer">
+      <div class="snare-music">
+        <h1>Snare</h1>
+        <div class="access-opt">
+          <button class="mute-btn" data-track="1">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select id="snare-options" class="music-options">
+            <option value="assets/allSounds/snare-acoustic01.wav">
+              Acoustic 1
+            </option>
+            <option value="assets/allSounds/snare-acoustic02.wav">
+              Acoustic 2
+            </option>
+            <option value="assets/allSounds/snare-analog.wav">
+              Snare Analog
+            </option>
+          </select>
+        </div>
+
+
+        <div class="pads">
+          <div class="snare-pad pad b0"></div>
+          <div class="snare-pad pad b1"></div>
+          <div class="snare-pad pad b2"></div>
+          <div class="snare-pad pad b3"></div>
+          <div class="snare-pad pad b4"></div>
+          <div class="snare-pad pad b5"></div>
+          <div class="snare-pad pad b6"></div>
+          <div class="snare-pad pad b7"></div>
+        </div>
+      </div>
+      <div class="hihat-music">
+        <h1>Hihat</h1>
+        <div class="access-opt">
+          <button class="mute-btn" data-track="2">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select id="hihat-options" class="music-options">
+            <option value="assets/allSounds/hihat-acoustic01.wav">
+              Acoustic 1
+            </option>
+            <option value="assets/allSounds/hihat-acoustic02.wav">
+              Acoustic 2
+            </option>
+            <option value="assets/allSounds/hihat-analog.wav">
+              hihat Analog
+            </option>
+          </select>
+        </div>
+       
+        <div class="pads">
+          <div class="hihat-pad pad b0"></div>
+          <div class="hihat-pad pad b1"></div>
+          <div class="hihat-pad pad b2"></div>
+          <div class="hihat-pad pad b3"></div>
+          <div class="hihat-pad pad b4"></div>
+          <div class="hihat-pad pad b5"></div>
+          <div class="hihat-pad pad b6"></div>
+          <div class="hihat-pad pad b7"></div>
+        </div>
+      </div>
+      <div class="kick-music">
+        <h1>Kick</h1>
+        <div class="access-opt">
+          <button class="mute-btn" data-track="3">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select id="kick-options" class="music-options">
+            <option value="assets/allSounds/kick-acoustic01.wav">
+              Acoustic 1
+            </option>
+            <option value="assets/allSounds/kick-acoustic02.wav">
+              Acoustic 2
+            </option>
+            <option value="assets/allSounds/kick-big.wav">Kick Big</option>
+          </select>
+        </div>
+
+        <div class="pads">
+          <div class="kick-pad pad b0"></div>
+          <div class="kick-pad pad b1"></div>
+          <div class="kick-pad pad b2"></div>
+          <div class="kick-pad pad b3"></div>
+          <div class="kick-pad pad b4"></div>
+          <div class="kick-pad pad b5"></div>
+          <div class="kick-pad pad b6"></div>
+          <div class="kick-pad pad b7"></div>
+        </div>
+      </div>
+      <button class="play">Play</button>
+      <div class="tempo">
+        <input type="range" class="tempo-slider" max="300" />
+          <p class="tempo-text">Tempo: <span class="tempo-value">100</span></span>
+       
+      </div>
+      <audio
+        src="assets/allSounds/hihat-digital.wav"
+        class="hihat-audio"
+      ></audio>
+      <audio src="assets/allSounds/kick-classic.wav" class="kick-audio"></audio>
+      <audio src="assets/allSounds/snare-big.wav" class="snare-audio"></audio>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
